@@ -142,7 +142,15 @@ p {
   }
 
 #SFJAZZ_image {
-    height: 100px;
+    height: 400px;
+}
+
+#Watchify_image {
+    height: 400px;
+}
+
+#DofE_image {
+    height: 400px;
 }
 
 .SFJAZZ {
