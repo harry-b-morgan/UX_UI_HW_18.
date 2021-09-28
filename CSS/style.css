@@ -18,12 +18,10 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     margin-bottom: 100px;
-    width: 100%;
-    padding: 1%;
+    padding: 100vw;
 }
 
-.ul {
-    width: 50%;
+.inline-block {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -32,12 +30,32 @@ body {
     margin: 0px 0px;
 }
 
-li {
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 0px 0px;
+    font-family: 'Lora', sans-serif;
+}
+
+nav ul li {
     margin: 0 10px;
-    font-family: 'Lora', serif;
-    font-weight: 700;
+    color: black;
     font-size: 18px;
-    font-kerning: 0.5%;
+    font-weight: 700;
+    padding: 10px;
+}
+
+nav ul li:last-child {
+    padding-right: 10px;
+    margin-right: 0px;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
 }
 
 .heroImg {
@@ -53,24 +71,90 @@ li {
 h1 {
     font-family: 'Lora', serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 31pt;
     font-kerning: 0%;
 }
 
 h2 {
     font-family: 'Lora', serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 24pt;
     font-kerning: 0%;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 18pt;
+    font-kerning: 0%;
+}
+
+h3:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
 }
 
 p {
     font-family: 'Quattrocento Sans', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18pt;
     font-kerning: -1%;
 }
 
 #Profile {
     height: 300px;
 }
+
+.flexContainer {
+    display: flex;
+    width: 33%;
+    margin: 25px;
+    padding: 25px;
+    flex-direction: row;
+}
+
+#research_icon {
+    max-width: 50px;
+}
+    
+#prototyping_icon {
+    max-width: 50px;
+}
+
+#programming_icon {
+    max-width: 50px;
+}
+
+.workGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Watchify"
+    "SFJAZZ"
+    "US–Department-of-Education";
+}
+
+.Watchify {
+    grid-area: "Watchify";
+    margin: 100px 100px;
+  }
+
+#SFJAZZ_image {
+    height: 100px;
+}
+
+.SFJAZZ {
+    grid-area: "SFJAZZ";
+    margin: 100px 100px;
+  }
+
+.US-Department-of-Education {
+        grid-area: "US-Department of Education";
+        margin: 100px 100px;
+      }
+
+  @media only screen and (max-width: 600){
+
+  }
